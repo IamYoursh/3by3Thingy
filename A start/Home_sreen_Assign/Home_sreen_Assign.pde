@@ -1,6 +1,6 @@
 
 //Global Variables
-color circleRed = #FF0303, white=255, black=0;
+color circlegreen = #418345, white=255, black=0;
 float ptDiameter, rectWidth, rectHeight;
 float pt1X, pt1Y, pt2X, pt2Y, pt3X, pt3Y, pt4X, pt4Y;
 float pt5X, pt5Y, pt6X, pt6Y, pt7X, pt7Y, pt8X, pt8Y;
@@ -37,7 +37,7 @@ void draw() {
   rect(pt10X, pt10Y, rectWidth, rectHeight);
   rect(pt11X, pt11Y, rectWidth, rectHeight);
   //
-  fill(black);
+  fill(circlegreen);
   //
   ellipse(pt1X, pt1Y, ptDiameter, ptDiameter);
   ellipse(pt2X, pt2Y, ptDiameter, ptDiameter);
@@ -49,7 +49,7 @@ void draw() {
   ellipse(pt10X, pt10Y, ptDiameter, ptDiameter);
   ellipse(pt11X, pt11Y, ptDiameter, ptDiameter);
   //
-  fill(circleRed);
+  fill(circlegreen);
   ellipse(pt4X, pt4Y, ptDiameter, ptDiameter);
   ellipse(pt8X, pt8Y, ptDiameter, ptDiameter);
   ellipse(pt12X, pt12Y, ptDiameter, ptDiameter);
