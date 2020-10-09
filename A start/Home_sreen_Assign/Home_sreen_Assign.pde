@@ -17,7 +17,6 @@ float button7X, button7Y, button7Width, button7Height;
 float button8X, button8Y, button8Width, button8Height;
 float button9X, button9Y, button9Width, button9Height;
 
-
 void setup() {
   //
   size(500, 600);
@@ -35,18 +34,18 @@ void setup() {
   pt9Y = pt10Y = pt11Y = pt12Y = height*2/3;
   pt13Y = pt14Y = pt15Y = pt16Y= height*3/3;
   //
-  button1X = width * 0.5/12; //Section 1, subsection 1
-  button1Y = height * 0.5/12; //Section 1, subsection 1
+  button1X = width * 0.5/12; 
+  button1Y = height * 0.5/12; 
   button1Width = width * 3/6 * 3/6;
   button1Height = height * 3/6 * 3/6;
   //
-  button2X = width * 4.5/12 ; //Section 2, subsection 1: denominator is 3*2, numerator is counted
-  button2Y = height * 0.5/12 ; //Section 2, subsection 0: denominator is 3*2, numerator is counted
+  button2X = width * 4.5/12 ; 
+  button2Y = height * 0.5/12 ; 
   button2Width = width * 3/6 * 3/6;
   button2Height = height * 3/6 * 3/6;
   //
-  button3X = width * 8.5/12; //Section 3, subsection 2: denominator is 3*5, numerator is counted
-  button3Y = height * 0.5/12; //Section 3, subsection 4: denominator is 3*5, numerator is counted
+  button3X = width * 8.5/12; 
+  button3Y = height * 0.5/12; 
   button3Width = width * 3/6 * 3/6;
   button3Height = height * 3/6 * 3/6;
   //
@@ -191,9 +190,6 @@ void draw() {
   //
   fill(white);
   //
-  ellipse(pt1X, pt1Y, ptDiameter, ptDiameter);
-  ellipse(pt2X, pt2Y, ptDiameter, ptDiameter);
-  ellipse(pt3X, pt3Y, ptDiameter, ptDiameter);
   ellipse(pt5X, pt5Y, ptDiameter, ptDiameter);
   ellipse(pt6X, pt6Y, ptDiameter, ptDiameter);
   ellipse(pt7X, pt7Y, ptDiameter, ptDiameter);
@@ -203,13 +199,8 @@ void draw() {
   //
   fill(white);
   //
-  ellipse(pt4X, pt4Y, ptDiameter, ptDiameter);
   ellipse(pt8X, pt8Y, ptDiameter, ptDiameter);
   ellipse(pt12X, pt12Y, ptDiameter, ptDiameter);
-  ellipse(pt13X, pt13Y, ptDiameter, ptDiameter);
-  ellipse(pt14X, pt14Y, ptDiameter, ptDiameter);
-  ellipse(pt15X, pt15Y, ptDiameter, ptDiameter);
-  ellipse(pt16X, pt16Y, ptDiameter, ptDiameter);
   //
   fill(white);
 }
