@@ -31,18 +31,30 @@ String clear = "Clear";
 color clearButtonBlack = #1C1211;
 color clearButtonColor = clearButtonBlack;
 //
-String blue = "Blue";
-color blueButtonBlack = #1C1211;
-color blueButtonColor = blueButtonBlack;
-//
 String redTwo = "Red";
 color redTwoButtonBlack = #1C1211;
 color redTwoButtonColor = redTwoButtonBlack;
 //
-
-
-
-
+String yellow = "Yellow";
+color yellowButtonBlack = #1C1211;
+color yellowButtonColor = yellowButtonBlack;
+//
+String blue = "Blue";
+color blueButtonBlack = #1C1211;
+color blueButtonColor = blueButtonBlack;
+//
+String green = "Green";
+color greenButtonBlack = #1C1211;
+color greenButtonColor = greenButtonBlack;
+//
+String orange = "Orange";
+color orangeButtonBlack = #1C1211;
+color orangeButtonColor = orangeButtonBlack;
+//
+String purple = "Purple";
+color purpleButtonBlack = #1C1211;
+color purpleButtonColor = purpleButtonBlack;
+//
 void setup() {
   //
   //
@@ -119,7 +131,8 @@ void setup() {
   button10Width = width*1/3 * 1/3;
   button10Height = height*0.8/3 * 0.8/3;
 }
-
+//
+//
 void draw() {
   fill(Dash);
   rect(pt1X, pt1Y, rectWidth, rectHeight);
@@ -182,6 +195,12 @@ void draw() {
     fill(DeepYellow);
     rect(button2X, button2Y, button2Width, button2Height);
   }
+  fill(yellowButtonColor);
+  textAlign(CENTER, CENTER); //Aligns the X&Y
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(titleFont, width*1/13);
+  text(yellow, button2X, button2Y, button2Width, button2Height);
+  fill(190); //Reset
   //
   //
   if ( mouseX>=button3X && mouseX<=button3X+button3Width && mouseY>=button3Y && mouseY<=button3Y+button3Height) {
@@ -206,6 +225,12 @@ void draw() {
     fill(DeepGreen);
     rect(button4X, button4Y, button4Width, button4Height);  
   }
+  fill(greenButtonColor);
+  textAlign(CENTER, CENTER); //Aligns the X&Y
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(titleFont, width*1/13);
+  text(green, button4X, button4Y, button4Width, button4Height);
+  fill(190); //Reset
   //
   //
   if ( mouseX>=button5X && mouseX<=button5X+button5Width && mouseY>=button5Y && mouseY<=button5Y+button5Height) {
@@ -215,6 +240,12 @@ void draw() {
     fill(DeepOrange);
     rect(button5X, button5Y, button5Width, button5Height);  
   }
+  fill(orangeButtonColor);
+  textAlign(CENTER, CENTER); //Aligns the X&Y
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(titleFont, width*1/13);
+  text(orange, button5X, button5Y, button5Width, button5Height);
+  fill(190); //Reset
   //
   //
   if ( mouseX>=button6X && mouseX<=button6X+button6Width && mouseY>=button6Y && mouseY<=button6Y+button6Height) {
@@ -224,6 +255,12 @@ void draw() {
     fill(DeepPurple);
     rect(button6X, button6Y, button6Width, button6Height);  
   }
+  fill(purpleButtonColor);
+  textAlign(CENTER, CENTER); //Aligns the X&Y
+  //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
+  textFont(titleFont, width*1/13);
+  text(purple, button6X, button6Y, button6Width, button6Height);
+  fill(190); //Reset
   //
   //
   if ( mouseX>=button7X && mouseX<=button7X+button7Width && mouseY>=button7Y && mouseY<=button7Y+button7Height) {
