@@ -21,11 +21,11 @@ float button9X, button9Y, button9Width, button9Height;
 float button10X, button10Y, button10Width, button10Height;
 //
 PFont titleFont;
-color buttonColour;
+color buttonColour;                      
 //
 String quit = "Quit";
 color quitButtonBlack = #1C1211;
-color quitButtonColor = quitButtonBlack;
+color quitButtonColor = quitButtonBlack;                 
 //
 String clear = "Clear";
 color clearButtonBlack = #1C1211;
@@ -68,7 +68,7 @@ void setup() {
   //String[] fontList = PFont.list(); //To list fonts available on OS
   //println("Start of Console");
   //printArray(fontList);
-  titleFont = createFont ("High Tower Text", 10); //Font size 10
+  titleFont = createFont ("High Tower Text", 10); //Font size 10                         
   //
   //
   pt1X = pt5X = pt9X = pt13X = width*0;
@@ -200,7 +200,7 @@ void draw() {
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
   textFont(titleFont, width*1/13);
   text(yellow, button2X, button2Y, button2Width, button2Height);
-  fill(190); //Reset
+  fill(190); //Reset 
   //
   //
   if ( mouseX>=button3X && mouseX<=button3X+button3Width && mouseY>=button3Y && mouseY<=button3Y+button3Height) {
