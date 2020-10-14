@@ -243,7 +243,7 @@ void draw() {
   fill(orangeButtonColor);
   textAlign(CENTER, CENTER); //Aligns the X&Y
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(titleFont, width*1/13);
+  textFont(titleFont, width*1/14);
   text(orange, button5X, button5Y, button5Width, button5Height);
   fill(190); //Reset
   //
